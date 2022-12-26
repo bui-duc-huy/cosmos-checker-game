@@ -1,10 +1,12 @@
 // THIS FILE IS GENERATED AUTOMATICALLY. DO NOT MODIFY.
 
-import terryCheckersterryCheckersCheckers from './terry/checkers/terry.checkers.checkers'
+import AliceCheckersAliceCheckersCheckers from './alice/checkers/alice.checkers.checkers'
+import TerryCheckersTerryCheckersCheckers from './terry/checkers/terry.checkers.checkers'
 
 
 export default { 
-  terryCheckersterryCheckersCheckers: load(terryCheckersterryCheckersCheckers, 'terry.checkers.checkers'),
+  AliceCheckersAliceCheckersCheckers: load(AliceCheckersAliceCheckersCheckers, 'alice.checkers.checkers'),
+  TerryCheckersTerryCheckersCheckers: load(TerryCheckersTerryCheckersCheckers, 'terry.checkers.checkers'),
   
 }
 
