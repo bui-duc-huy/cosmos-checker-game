@@ -4,7 +4,7 @@ import { SystemInfo } from "../checkers/system_info";
 import { StoredGame } from "../checkers/stored_game";
 import { Writer, Reader } from "protobufjs/minimal";
 
-export const protobufPackage = "alice.checkers.checkers";
+export const protobufPackage = "terry.checkers.checkers";
 
 /** GenesisState defines the checkers module's genesis state. */
 export interface GenesisState {

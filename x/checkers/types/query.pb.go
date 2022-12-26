@@ -378,14 +378,14 @@ func (m *QueryAllStoredGameResponse) GetPagination() *query.PageResponse {
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "alice.checkers.checkers.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "alice.checkers.checkers.QueryParamsResponse")
-	proto.RegisterType((*QueryGetSystemInfoRequest)(nil), "alice.checkers.checkers.QueryGetSystemInfoRequest")
-	proto.RegisterType((*QueryGetSystemInfoResponse)(nil), "alice.checkers.checkers.QueryGetSystemInfoResponse")
-	proto.RegisterType((*QueryGetStoredGameRequest)(nil), "alice.checkers.checkers.QueryGetStoredGameRequest")
-	proto.RegisterType((*QueryGetStoredGameResponse)(nil), "alice.checkers.checkers.QueryGetStoredGameResponse")
-	proto.RegisterType((*QueryAllStoredGameRequest)(nil), "alice.checkers.checkers.QueryAllStoredGameRequest")
-	proto.RegisterType((*QueryAllStoredGameResponse)(nil), "alice.checkers.checkers.QueryAllStoredGameResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "terry.checkers.checkers.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "terry.checkers.checkers.QueryParamsResponse")
+	proto.RegisterType((*QueryGetSystemInfoRequest)(nil), "terry.checkers.checkers.QueryGetSystemInfoRequest")
+	proto.RegisterType((*QueryGetSystemInfoResponse)(nil), "terry.checkers.checkers.QueryGetSystemInfoResponse")
+	proto.RegisterType((*QueryGetStoredGameRequest)(nil), "terry.checkers.checkers.QueryGetStoredGameRequest")
+	proto.RegisterType((*QueryGetStoredGameResponse)(nil), "terry.checkers.checkers.QueryGetStoredGameResponse")
+	proto.RegisterType((*QueryAllStoredGameRequest)(nil), "terry.checkers.checkers.QueryAllStoredGameRequest")
+	proto.RegisterType((*QueryAllStoredGameResponse)(nil), "terry.checkers.checkers.QueryAllStoredGameResponse")
 }
 
 func init() { proto.RegisterFile("checkers/query.proto", fileDescriptor_3c482788bba85e7a) }
@@ -461,7 +461,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/alice.checkers.checkers.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/terry.checkers.checkers.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -470,7 +470,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) SystemInfo(ctx context.Context, in *QueryGetSystemInfoRequest, opts ...grpc.CallOption) (*QueryGetSystemInfoResponse, error) {
 	out := new(QueryGetSystemInfoResponse)
-	err := c.cc.Invoke(ctx, "/alice.checkers.checkers.Query/SystemInfo", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/terry.checkers.checkers.Query/SystemInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -479,7 +479,7 @@ func (c *queryClient) SystemInfo(ctx context.Context, in *QueryGetSystemInfoRequ
 
 func (c *queryClient) StoredGame(ctx context.Context, in *QueryGetStoredGameRequest, opts ...grpc.CallOption) (*QueryGetStoredGameResponse, error) {
 	out := new(QueryGetStoredGameResponse)
-	err := c.cc.Invoke(ctx, "/alice.checkers.checkers.Query/StoredGame", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/terry.checkers.checkers.Query/StoredGame", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -488,7 +488,7 @@ func (c *queryClient) StoredGame(ctx context.Context, in *QueryGetStoredGameRequ
 
 func (c *queryClient) StoredGameAll(ctx context.Context, in *QueryAllStoredGameRequest, opts ...grpc.CallOption) (*QueryAllStoredGameResponse, error) {
 	out := new(QueryAllStoredGameResponse)
-	err := c.cc.Invoke(ctx, "/alice.checkers.checkers.Query/StoredGameAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/terry.checkers.checkers.Query/StoredGameAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -538,7 +538,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/alice.checkers.checkers.Query/Params",
+		FullMethod: "/terry.checkers.checkers.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -556,7 +556,7 @@ func _Query_SystemInfo_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/alice.checkers.checkers.Query/SystemInfo",
+		FullMethod: "/terry.checkers.checkers.Query/SystemInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).SystemInfo(ctx, req.(*QueryGetSystemInfoRequest))
@@ -574,7 +574,7 @@ func _Query_StoredGame_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/alice.checkers.checkers.Query/StoredGame",
+		FullMethod: "/terry.checkers.checkers.Query/StoredGame",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StoredGame(ctx, req.(*QueryGetStoredGameRequest))
@@ -592,7 +592,7 @@ func _Query_StoredGameAll_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/alice.checkers.checkers.Query/StoredGameAll",
+		FullMethod: "/terry.checkers.checkers.Query/StoredGameAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StoredGameAll(ctx, req.(*QueryAllStoredGameRequest))
@@ -601,7 +601,7 @@ func _Query_StoredGameAll_Handler(srv interface{}, ctx context.Context, dec func
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "alice.checkers.checkers.Query",
+	ServiceName: "terry.checkers.checkers.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"testing"
 
-	keepertest "github.com/alice/checkers/testutil/keeper"
-	"github.com/alice/checkers/testutil/nullify"
-	"github.com/alice/checkers/x/checkers/keeper"
-	"github.com/alice/checkers/x/checkers/types"
+	keepertest "github.com/terry/checkers/testutil/keeper"
+	"github.com/terry/checkers/testutil/nullify"
+	"github.com/terry/checkers/x/checkers/keeper"
+	"github.com/terry/checkers/x/checkers/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )

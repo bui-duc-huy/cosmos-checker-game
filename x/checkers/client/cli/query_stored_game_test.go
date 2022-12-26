@@ -12,10 +12,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/alice/checkers/testutil/network"
-	"github.com/alice/checkers/testutil/nullify"
-	"github.com/alice/checkers/x/checkers/client/cli"
-	"github.com/alice/checkers/x/checkers/types"
+	"github.com/terry/checkers/testutil/network"
+	"github.com/terry/checkers/testutil/nullify"
+	"github.com/terry/checkers/x/checkers/client/cli"
+	"github.com/terry/checkers/x/checkers/types"
 )
 
 // Prevent strconv unused error

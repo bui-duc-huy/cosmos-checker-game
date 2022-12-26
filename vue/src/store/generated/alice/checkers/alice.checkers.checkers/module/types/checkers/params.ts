@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { Writer, Reader } from "protobufjs/minimal";
 
-export const protobufPackage = "alice.checkers.checkers";
+export const protobufPackage = "terry.checkers.checkers";
 
 /** Params defines the parameters for the module. */
 export interface Params {}

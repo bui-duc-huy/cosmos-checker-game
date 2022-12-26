@@ -132,8 +132,8 @@ func (m *MsgCreateGameResponse) GetGameIndex() string {
 }
 
 func init() {
-	proto.RegisterType((*MsgCreateGame)(nil), "alice.checkers.checkers.MsgCreateGame")
-	proto.RegisterType((*MsgCreateGameResponse)(nil), "alice.checkers.checkers.MsgCreateGameResponse")
+	proto.RegisterType((*MsgCreateGame)(nil), "terry.checkers.checkers.MsgCreateGame")
+	proto.RegisterType((*MsgCreateGameResponse)(nil), "terry.checkers.checkers.MsgCreateGameResponse")
 }
 
 func init() { proto.RegisterFile("checkers/tx.proto", fileDescriptor_b89f7ca8d0309536) }
@@ -182,7 +182,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) CreateGame(ctx context.Context, in *MsgCreateGame, opts ...grpc.CallOption) (*MsgCreateGameResponse, error) {
 	out := new(MsgCreateGameResponse)
-	err := c.cc.Invoke(ctx, "/alice.checkers.checkers.Msg/CreateGame", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/terry.checkers.checkers.Msg/CreateGame", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -216,7 +216,7 @@ func _Msg_CreateGame_Handler(srv interface{}, ctx context.Context, dec func(inte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/alice.checkers.checkers.Msg/CreateGame",
+		FullMethod: "/terry.checkers.checkers.Msg/CreateGame",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).CreateGame(ctx, req.(*MsgCreateGame))
@@ -225,7 +225,7 @@ func _Msg_CreateGame_Handler(srv interface{}, ctx context.Context, dec func(inte
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "alice.checkers.checkers.Msg",
+	ServiceName: "terry.checkers.checkers.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

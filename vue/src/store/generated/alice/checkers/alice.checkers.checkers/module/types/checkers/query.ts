@@ -8,7 +8,7 @@ import {
   PageResponse,
 } from "../cosmos/base/query/v1beta1/pagination";
 
-export const protobufPackage = "alice.checkers.checkers";
+export const protobufPackage = "terry.checkers.checkers";
 
 /** QueryParamsRequest is request type for the Query/Params RPC method. */
 export interface QueryParamsRequest {}
@@ -603,7 +603,7 @@ export class QueryClientImpl implements Query {
   Params(request: QueryParamsRequest): Promise<QueryParamsResponse> {
     const data = QueryParamsRequest.encode(request).finish();
     const promise = this.rpc.request(
-      "alice.checkers.checkers.Query",
+      "terry.checkers.checkers.Query",
       "Params",
       data
     );
@@ -615,7 +615,7 @@ export class QueryClientImpl implements Query {
   ): Promise<QueryGetSystemInfoResponse> {
     const data = QueryGetSystemInfoRequest.encode(request).finish();
     const promise = this.rpc.request(
-      "alice.checkers.checkers.Query",
+      "terry.checkers.checkers.Query",
       "SystemInfo",
       data
     );
@@ -629,7 +629,7 @@ export class QueryClientImpl implements Query {
   ): Promise<QueryGetStoredGameResponse> {
     const data = QueryGetStoredGameRequest.encode(request).finish();
     const promise = this.rpc.request(
-      "alice.checkers.checkers.Query",
+      "terry.checkers.checkers.Query",
       "StoredGame",
       data
     );
@@ -643,7 +643,7 @@ export class QueryClientImpl implements Query {
   ): Promise<QueryAllStoredGameResponse> {
     const data = QueryAllStoredGameRequest.encode(request).finish();
     const promise = this.rpc.request(
-      "alice.checkers.checkers.Query",
+      "terry.checkers.checkers.Query",
       "StoredGameAll",
       data
     );

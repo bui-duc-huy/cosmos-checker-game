@@ -99,7 +99,7 @@ func (m *StoredGame) GetRed() string {
 }
 
 func init() {
-	proto.RegisterType((*StoredGame)(nil), "alice.checkers.checkers.StoredGame")
+	proto.RegisterType((*StoredGame)(nil), "terry.checkers.checkers.StoredGame")
 }
 
 func init() { proto.RegisterFile("checkers/stored_game.proto", fileDescriptor_8439c9c90688ff75) }

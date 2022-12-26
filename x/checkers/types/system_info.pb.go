@@ -67,7 +67,7 @@ func (m *SystemInfo) GetNextId() uint64 {
 }
 
 func init() {
-	proto.RegisterType((*SystemInfo)(nil), "alice.checkers.checkers.SystemInfo")
+	proto.RegisterType((*SystemInfo)(nil), "terry.checkers.checkers.SystemInfo")
 }
 
 func init() { proto.RegisterFile("checkers/system_info.proto", fileDescriptor_1580c0dd88c0be2b) }

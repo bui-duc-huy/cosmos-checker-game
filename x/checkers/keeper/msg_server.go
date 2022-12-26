@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/alice/checkers/x/checkers/types"
+	"github.com/terry/checkers/x/checkers/types"
 )
 
 type msgServer struct {

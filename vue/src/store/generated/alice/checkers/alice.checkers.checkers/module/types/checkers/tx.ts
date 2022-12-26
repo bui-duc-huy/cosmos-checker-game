@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { Reader, Writer } from "protobufjs/minimal";
 
-export const protobufPackage = "alice.checkers.checkers";
+export const protobufPackage = "terry.checkers.checkers";
 
 export interface MsgCreateGame {
   creator: string;
@@ -176,7 +176,7 @@ export class MsgClientImpl implements Msg {
   CreateGame(request: MsgCreateGame): Promise<MsgCreateGameResponse> {
     const data = MsgCreateGame.encode(request).finish();
     const promise = this.rpc.request(
-      "alice.checkers.checkers.Msg",
+      "terry.checkers.checkers.Msg",
       "CreateGame",
       data
     );

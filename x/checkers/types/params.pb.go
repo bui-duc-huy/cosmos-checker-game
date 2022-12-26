@@ -60,7 +60,7 @@ func (m *Params) XXX_DiscardUnknown() {
 var xxx_messageInfo_Params proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*Params)(nil), "alice.checkers.checkers.Params")
+	proto.RegisterType((*Params)(nil), "terry.checkers.checkers.Params")
 }
 
 func init() { proto.RegisterFile("checkers/params.proto", fileDescriptor_ec14988318ba9aaa) }

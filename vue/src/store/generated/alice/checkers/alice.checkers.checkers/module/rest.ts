@@ -338,11 +338,11 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
    * @tags Query
    * @name QueryParams
    * @summary Parameters queries the parameters of the module.
-   * @request GET:/alice/checkers/checkers/params
+   * @request GET:/terry/checkers/checkers/params
    */
   queryParams = (params: RequestParams = {}) =>
     this.request<CheckersQueryParamsResponse, RpcStatus>({
-      path: `/alice/checkers/checkers/params`,
+      path: `/terry/checkers/checkers/params`,
       method: "GET",
       format: "json",
       ...params,
@@ -354,7 +354,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
    * @tags Query
    * @name QueryStoredGameAll
    * @summary Queries a list of StoredGame items.
-   * @request GET:/alice/checkers/checkers/stored_game
+   * @request GET:/terry/checkers/checkers/stored_game
    */
   queryStoredGameAll = (
     query?: {
@@ -367,7 +367,7 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
     params: RequestParams = {},
   ) =>
     this.request<CheckersQueryAllStoredGameResponse, RpcStatus>({
-      path: `/alice/checkers/checkers/stored_game`,
+      path: `/terry/checkers/checkers/stored_game`,
       method: "GET",
       query: query,
       format: "json",
@@ -380,11 +380,11 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
    * @tags Query
    * @name QueryStoredGame
    * @summary Queries a StoredGame by index.
-   * @request GET:/alice/checkers/checkers/stored_game/{index}
+   * @request GET:/terry/checkers/checkers/stored_game/{index}
    */
   queryStoredGame = (index: string, params: RequestParams = {}) =>
     this.request<CheckersQueryGetStoredGameResponse, RpcStatus>({
-      path: `/alice/checkers/checkers/stored_game/${index}`,
+      path: `/terry/checkers/checkers/stored_game/${index}`,
       method: "GET",
       format: "json",
       ...params,
@@ -396,11 +396,11 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
    * @tags Query
    * @name QuerySystemInfo
    * @summary Queries a SystemInfo by index.
-   * @request GET:/alice/checkers/checkers/system_info
+   * @request GET:/terry/checkers/checkers/system_info
    */
   querySystemInfo = (params: RequestParams = {}) =>
     this.request<CheckersQueryGetSystemInfoResponse, RpcStatus>({
-      path: `/alice/checkers/checkers/system_info`,
+      path: `/terry/checkers/checkers/system_info`,
       method: "GET",
       format: "json",
       ...params,

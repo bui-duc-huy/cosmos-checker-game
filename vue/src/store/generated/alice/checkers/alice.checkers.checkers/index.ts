@@ -114,7 +114,7 @@ export default {
 	},
 	actions: {
 		init({ dispatch, rootGetters }) {
-			console.log('Vuex module: alice.checkers.checkers initialized!')
+			console.log('Vuex module: terry.checkers.checkers initialized!')
 			if (rootGetters['common/env/client']) {
 				rootGetters['common/env/client'].on('newblock', () => {
 					dispatch('StoreUpdate')

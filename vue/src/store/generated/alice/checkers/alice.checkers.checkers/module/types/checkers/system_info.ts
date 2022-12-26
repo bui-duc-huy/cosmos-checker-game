@@ -2,7 +2,7 @@
 import * as Long from "long";
 import { util, configure, Writer, Reader } from "protobufjs/minimal";
 
-export const protobufPackage = "alice.checkers.checkers";
+export const protobufPackage = "terry.checkers.checkers";
 
 export interface SystemInfo {
   nextId: number;

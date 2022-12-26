@@ -85,7 +85,7 @@ func (m *GenesisState) GetStoredGameList() []StoredGame {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "alice.checkers.checkers.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "terry.checkers.checkers.GenesisState")
 }
 
 func init() { proto.RegisterFile("checkers/genesis.proto", fileDescriptor_6e928243c164a8dc) }

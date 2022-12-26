@@ -1,4 +1,4 @@
-module github.com/alice/checkers
+module github.com/terry/checkers
 
 go 1.16
 
